@@ -96,7 +96,7 @@ class Dev extends Emp {
     }
 }
 
-public class MultipleInheritence {
+public class Inheritence {
 
     public static void main(String[] args) {
         int choice = 0;
