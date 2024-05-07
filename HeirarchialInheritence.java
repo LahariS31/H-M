@@ -96,7 +96,7 @@ class Dev extends Emp {
     }
 }
 
-public class Inheritence {
+public class HeirarchialInheritence {
 
     public static void main(String[] args) {
         int choice = 0;
