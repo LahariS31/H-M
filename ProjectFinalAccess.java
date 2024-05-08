@@ -36,7 +36,7 @@ class Emp {
     }
 }
 
-class Clerk extends Emp {
+final class Clerk extends Emp {
 
     Clerk() {
         desg = "Clerk";
@@ -47,7 +47,7 @@ class Clerk extends Emp {
 
 }
 
-class Manager extends Emp {
+final class Manager extends Emp {
 
     Manager() {
         desg = "Manager";
@@ -58,7 +58,7 @@ class Manager extends Emp {
 
 }
 
-class Tester extends Emp {
+final class Tester extends Emp {
 
     Tester() {
         desg = "Tester";
@@ -69,7 +69,7 @@ class Tester extends Emp {
 
 }
 
-class Dev extends Emp {
+final class Dev extends Emp {
 
     Dev() {
         desg = "Developer";
@@ -80,7 +80,7 @@ class Dev extends Emp {
 
 }
 
-public class Assignment1 {
+public class ProjectFinalAccess {
 
     public static void main(String[] args) {
         int choice, ch1 = 0;
@@ -176,3 +176,4 @@ public class Assignment1 {
 
     }
 }
+

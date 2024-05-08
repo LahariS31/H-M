@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class Emp {
+abstract class Emp {
     int age, id;
     String name;
     float Salary;
@@ -19,13 +19,7 @@ class Emp {
 
     }
 
-   void raise() {
-    Salary = (float) (1.1 * Salary);
-    System.out.println("------------------");
-    System.out.println("My Id:" + id + "My Name:" + name + "\n" + "My Age:" + age + "\n"
-            + "\n" + "My Desgination:" + desg);
-    System.out.println("Updated Salary:" + (Salary));
-}
+    abstract void raise();
 
     void display() {
         System.out.println("------------------");
@@ -43,7 +37,13 @@ class Clerk extends Emp {
         Salary = 40000;
     }
 
-    
+    void raise() {
+        Salary = (float) (1.1 * Salary);
+        System.out.println("------------------");
+        System.out.println("My Id:" + id + "My Name:" + name + "\n" + "My Age:" + age + "\n"
+                + "\n" + "My Desgination:" + desg);
+        System.out.println("Updated Salary:" + (Salary));
+    }
 
 }
 
@@ -54,7 +54,13 @@ class Manager extends Emp {
         Salary = 100000;
     }
 
-    
+    void raise() {
+        Salary = (float) (1.1 * Salary);
+        System.out.println("------------------");
+        System.out.println("My Id:" + id + "My Name:" + name + "\n" + "My Age:" + age + "\n"
+                + "\n" + "My Desgination:" + desg);
+        System.out.println("Updated Salary:" + (Salary));
+    }
 
 }
 
@@ -65,7 +71,13 @@ class Tester extends Emp {
         Salary = 50000;
     }
 
-    
+    void raise() {
+        Salary = (float) (1.1 * Salary);
+        System.out.println("------------------");
+        System.out.println("My Id:" + id + "My Name:" + name + "\n" + "My Age:" + age + "\n"
+                + "\n" + "My Desgination:" + desg);
+        System.out.println("Updated Salary:" + (Salary));
+    }
 
 }
 
@@ -76,11 +88,17 @@ class Dev extends Emp {
         Salary = 50000;
     }
 
-    
+    void raise() {
+        Salary = (float) (1.1 * Salary);
+        System.out.println("------------------");
+        System.out.println("My Id:" + id + "My Name:" + name + "\n" + "My Age:" + age + "\n"
+                + "\n" + "My Desgination:" + desg);
+        System.out.println("Updated Salary:" + (Salary));
+    }
 
 }
 
-public class Assignment1 {
+public class AbstractionEmpAssignment {
 
     public static void main(String[] args) {
         int choice, ch1 = 0;
